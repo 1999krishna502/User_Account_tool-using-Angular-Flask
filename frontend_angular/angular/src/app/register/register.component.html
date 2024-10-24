@@ -1,0 +1,18 @@
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <label>Username</label>
+  <input class="form-control" type="text" name="username" placeholder="username" ngModel required><br>
+  <label>Email</label>
+  <input class="form-control" type="email" name="email" placeholder="email" ngModel required><br>
+  <label>Address</label>
+  <input class="form-control" type="text" name="address" placeholder="address" ngModel required><br>
+
+  <label>Phone Number</label>
+  <input class="form-control" type="text" name="phone" placeholder="phone number" ngModel required><br>
+
+  <label>Password</label>
+  <input class="form-control" type="password" name="password" placeholder="password" ngModel required><br>
+  <label>Confirm Password</label>
+  <input class="form-control" type="password" name="cpassword" ngModel required><br>
+  <input type="submit" value="Login">
+</form>

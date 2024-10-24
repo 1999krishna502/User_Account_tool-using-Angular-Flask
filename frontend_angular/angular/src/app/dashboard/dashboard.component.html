@@ -1,0 +1,16 @@
+<div class="dashboard-container">
+    <h1 class="dashboard-title">Dashboard works!</h1>
+    <div class="user-info">
+      <p class="user-greeting">Welcome, {{ username }}!</p>
+      <p>Email: {{ email }}</p>
+      <p>Address: {{ address }}</p>
+      <p>Phone Number: {{ phone }}</p>
+    </div>
+    <div class="action-buttons">
+      <!-- Edit Button -->
+      <button class="btn edit-btn" [routerLink]="['/edit']">Edit</button>
+      <!-- Delete Button -->
+      <button class="btn delete-btn" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+<p>edit-user works!</p>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <label>Username</label>
+    <input class="form-control" type="text" name="username" [(ngModel)]="username" required><br>
+  
+    <label>Email</label>
+    <input class="form-control" type="email" name="email" [(ngModel)]="email" required><br>
+  
+    <label>Address</label>
+    <input class="form-control" type="text" name="address" [(ngModel)]="address"><br>
+  
+    <label>Phone Number</label>
+    <input class="form-control" type="text" name="phone" [(ngModel)]="phone"><br>
+  
+    <input type="submit" value="Save">
+  </form>
+  
